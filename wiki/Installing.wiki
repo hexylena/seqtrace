@@ -1,0 +1,32 @@
+#summary Installing SeqTrace.
+
+=Installation Instructions=
+
+SeqTrace is easy to install on all popular operating systems.  The instructions differ somewhat for each OS, however, so be sure to follow the steps for your system.
+  * GNU/Linux
+  * Windows
+  * OSX
+
+==General Requirements==
+
+SeqTrace requires both [http://www.python.org/ Python] and GTK+ (and the Python package PyGTK), and will only run properly under the 2.7 series of Python, not 3.0.  There are significant differences between 2.7 and 3.0 in Python's handling of low-level file I/O, and these differences matter a great deal when reading binary sequence trace file formats.  SeqTrace is currently written for the 2.x series of Python because it is widely installed and available just about everywhere.  In the future, though, I plan to port SeqTrace to Python 3.0.
+
+
+==GNU/Linux==
+
+Installing SeqTrace on most GNU/Linux distributions is very simple, because they generally already have all necessary software libraries installed.  Of course, SeqTrace does require a windowing environment, so it will not work in command shell-only installations.
+
+On most GNU/Linux distributions (such as Ubuntu or XUbuntu), installing SeqTrace requires nothing more than downloading and unzipping the SeqTrace archive.  Run seqtrace.py to launch SeqTrace.
+
+
+==Windows==
+
+SeqTrace requires the Python runtime environment and the GTK+ library to run properly.  On Windows, you might need to install one or both of these before installing SeqTrace.  Fortunately, both Python and GTK+ are both easy to install on Windows.  There are many other Windows programs that use Python or GTK+, so it is possible that your Windows environment already includes these packages.
+
+If your system does not already have Python installed, you will need to download the latest Python 2.7.x installer (http://www.python.org/download/) and install it.  Install the 32-bit version of Python, not the one with "X86-64" in its name.  The filename for the installer you want will be "python-2.7.x.msi" or something similar.
+
+Download the latest release of the PyGTK all-in-one installer for Python 2.7 and install it (http://ftp.gnome.org/pub/GNOME/binaries/win32/pygtk/2.24/).  At the time of this writing, the latest installer is pygtk-all-in-one-2.24.1.win32-py2.7.msi.
+
+Download the SeqTrace archive file (seqtrace.zip) and extract the contents wherever you would like to have SeqTrace located on your system.
+
+That's it!  To run SeqTrace, you can either double click seqtrace.py in Windows Explorer, or run seqtrace.py from a command prompt.
