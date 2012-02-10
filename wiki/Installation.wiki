@@ -3,7 +3,7 @@
 =Installation Instructions=
 
 !SeqTrace is easy to install on all popular operating systems.  The instructions differ somewhat for each OS, however, so be sure to follow the steps for your system.
-  * GNU/Linux
+  * [Installation#GNU/Linux]
   * Windows
   * OSX
 
