@@ -1,4 +1,4 @@
-#summary Installing SeqTrace.
+#summary How to get SeqTrace up and running.
 
 =Installation Instructions=
 
@@ -6,6 +6,8 @@
   * [Installation#GNU/Linux GNU/Linux]
   * [Installation#Windows Windows]
   * OSX
+
+SeqTrace includes a very fast pairwise alignment module written in C, but you must compile it for your hardware in order to use it.  If you would like to read more about this, check out the [AdvancedInstallationTopics advanced installation instructions].
 
 ==General Requirements==
 
