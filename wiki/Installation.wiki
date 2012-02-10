@@ -7,7 +7,7 @@
   * [Installation#Windows Windows]
   * OSX
 
-SeqTrace includes a very fast pairwise alignment module written in C, but you must compile it for your hardware in order to use it.  If you would like to read more about this, check out the [AdvancedInstallationTopics advanced installation instructions].
+!SeqTrace includes a very fast pairwise alignment module written in C, but you must compile it for your hardware in order to use it.  If you would like to read more about this, check out the [AdvancedInstallationTopics advanced installation instructions].
 
 ==General Requirements==
 
