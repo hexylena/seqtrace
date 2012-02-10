@@ -26,8 +26,8 @@ I have not tried compiling or using the C alignment code on Windows or OSX, but 
 
 If you would like to run !SeqTrace's unit tests, you will need to make sure that the !SeqTrace package is in Python's search path.  A simple way to do this is to create a text file called "seqtrace.pth" with a single line containing the path to the seqtrace package directory.  Put this text file in a location included in Python's module search path.  On XUbuntu, /usr/local/lib/python2.x/dist-packages works well, and the following commands will set this up.
 {{{
->cd  /path/to/seqtrace/directory
->sudo pwd > /usr/local/lib/python2.x/dist-packages/seqtrace.pth
+cd  /path/to/seqtrace/directory
+sudo pwd > /usr/local/lib/python2.x/dist-packages/seqtrace.pth
 }}}
 
 Once the search path is set up properly, executing tests/run_tests.py will run all unit tests.
