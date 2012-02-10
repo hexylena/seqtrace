@@ -1,0 +1,5 @@
+#summary Side wiki navigation bar.
+
+  * Installing !SeqTrace
+    * [Installation Basic installation instructions]
+    * [AdvancedInstallationTopics Advanced installation topics]
