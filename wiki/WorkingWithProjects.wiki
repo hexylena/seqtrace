@@ -56,7 +56,7 @@ The image above shows the same project illustrated previously after grouping tog
 
 == Adjusting settings for generating finished sequences ==
 
-You can view any file or forward/reverse group in your project by selecting it in the project window, then choosing "View selected trace file(s)..." from the "Traces" menu or clicking on the corresponding toolbar button.  This will open the trace file or group in the trace view window.  For more information about using the trace view window, read the [QuickStartGuide quick start guide] or the full trace window documentation.
+You can view any file or forward/reverse group in your project by selecting it in the project window, then choosing "View selected trace file(s)..." from the "Traces" menu or clicking on the corresponding toolbar button.  This will open the trace file or group in the trace view window.  For more information about using the trace view window, read the [QuickStartGuide quick start guide] or the [TraceViewWindow full trace window documentation].
 
 Sequence traces that are identified as reverse reads will automatically be reverse complemented before being displayed in the trace view window.  If you select a forward/reverse group to display, the forward and reverse reads will display together in the trace view window, along with an alignment of the two sequences and a single consensus sequence.
 
