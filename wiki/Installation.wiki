@@ -1,6 +1,6 @@
 #summary How to get SeqTrace up and running.
 
-=Installation Instructions=
+=Installation instructions=
 
 !SeqTrace is easy to install on all popular operating systems.  The instructions differ somewhat for each OS, however, so be sure to follow the steps for your system.
   * [Installation#GNU/Linux GNU/Linux]
@@ -9,7 +9,7 @@
 
 !SeqTrace includes a very fast pairwise alignment module written in C, but you must compile it for your hardware in order to use it.  If you would like to read more about this, check out the [AdvancedInstallationTopics advanced installation instructions].
 
-==General Requirements==
+==General requirements==
 
 !SeqTrace requires both [http://www.python.org/ Python] and [http://www.gtk.org/ GTK+] (and the Python package [http://www.pygtk.org/ PyGTK]), and will only run properly under the 2.7 series of Python, not 3.0.  There are significant differences between 2.7 and 3.0 in Python's handling of low-level file I/O, and these differences matter a great deal when reading binary sequence trace file formats.  !SeqTrace is currently written for the 2.x series of Python because it is widely installed and available just about everywhere.  In the future, though, I plan to port !SeqTrace to Python 3.0.
 
