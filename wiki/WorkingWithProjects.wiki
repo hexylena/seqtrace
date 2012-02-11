@@ -1,0 +1,15 @@
+#summary organizing your work with SeqTrace projects
+
+= Working with !SeqTrace projects =
+
+!SeqTrace projects provide a convenient way to organize your work and process large numbers of trace files.  Furthermore, setting up a project is required in order to take advantage of !SeqTrace's more advanced features, such as automatic end quality trimming and forward/reverse trace matching.  Projects also allow you to save your work to an external !SeqTrace project file.
+
+From start to finish, using a !SeqTrace project will usually follow a typical work flow.
+  # Create a new project.
+  # Add your trace files to the project.
+  # Identify matching forward and reverse trace files.
+  # Adjust parameters for generating finished sequences.
+  # Process all trace files in the project.
+  # Export the resulting finished sequences.
+
+This document discusses each of these steps in detail.
