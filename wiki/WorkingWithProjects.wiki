@@ -4,7 +4,7 @@
 
 !SeqTrace projects provide a convenient way to organize your work and process large numbers of trace files.  Furthermore, setting up a project is required in order to take advantage of !SeqTrace's more advanced features, such as automatic end quality trimming and forward/reverse trace matching.  Projects also allow you to save your work to an external !SeqTrace project file.
 
-From start to finish, using a !SeqTrace project will usually follow a typical work flow.
+From start to finish, using a !SeqTrace project will usually proceed with the following work flow.
   # Create a new project.
   # Add your trace files to the project.
   # Identify matching forward and reverse trace files.
@@ -13,3 +13,19 @@ From start to finish, using a !SeqTrace project will usually follow a typical wo
   # Export the resulting finished sequences.
 
 This document discusses each of these steps in detail.
+
+== Creating a new project ==
+
+From the main !SeqTrace window, select "New project.." from the "File" menu, or click the corresponding toolbar button.  !SeqTrace will then display the project settings window for the new project.
+
+http://seqtrace.googlecode.com/svn/wiki/images/project_settings-1.png
+
+There are two pieces of information that are important for setting up the new project, indicated by the numbered circles in the image above.
+  # You need to tell !SeqTrace where your sequencing trace files are located.  You can either type in a directory name or click "Choose..." to select one.  The "use relative folder path" checkbox tells !SeqTrace how to remember the trace file location.  If this box is checked, then !SeqTrace will save the location of the trace file folder relative to the location of the project file.  This is useful if you later move the project file and trace files to a different location on your system or a different computer.  If you use this option, you might want to save your project first, then specify the location of the trace files.  If this box is not checked, !SeqTrace will use the absolute path to the trace file location.
+  # If your project has both forward and reverse sequencing reads of the same PCR products, then you will want to tell !SeqTrace how to identify which trace files are forward reads and which are reverse reads.  Usually, the sequencing trace filenames indicate whether the file is a forward or reverse read, and you can specify the portion of the filename that identifies the direction of the read.  !SeqTrace will then automatically identify trace files as forward or reverse sequences.
+
+== Adding trace files to the project ==
+
+Adding files to the project is simple.  Select "Add trace file(s)..." from the "Traces" menu, or click the corresponding toolbar button, then select the sequencing trace files you want to add.
+
+If you correctly set the forward and reverse search strings in the project settings, !SeqTrace will automatically identify the direction of the sequencing reads.  If not, you can open the project settings (File -> Project settings...), set the correct search strings, then have !SeqTrace re-identify forward and reverse files (Traces -> Find and mark forward/reverse).
