@@ -20,15 +20,6 @@ From the main !SeqTrace window, select "New project.." from the "File" menu, or 
 
 http://seqtrace.googlecode.com/svn/wiki/images/project_settings-1.png
 
-There are four settings that control how !SeqTrace generates finished sequences from the "raw" base call reads in a trace file.
-
-  # The minimum confidence score indicates the threshold for what !SeqTrace considers to be a "good" base call.  Base calls with confidence scores below this threshold will either be removed from the finished sequence (if they are at one of the ends) or replaced with an "N".
-  # This checkbox controls whether or not !SeqTrace will trim the ends of the finished sequence to eliminate regions with a high percentage of low-quality base calls.
-  # If automatic end trimming is enabled (2, above), these two settings specify the number of low-quality base calls !SeqTrace will allow at the ends of the finished sequence.
-  # This setting only applies to consensus sequences generated from aligned forward and reverse sequencing reads.  If enabled, this setting will cause !SeqTrace to eliminate the ends of the finished sequence that are not supported by both reads.  In other words, the end gap regions of the alignment, where the two sequences do not overlap, will be removed.  This ensures the highest quality consensus sequence and should also guarantee that no primer sequence will be present in the finished sequence.
-
-After adjusting the !SeqTrace's sequence settings, you can tell !SeqTrace to re-calculate the working sequence to see how the new settings change the finished sequence (in the trace view window, choose Edit -> Recalculate working seq.).
-
 There are two pieces of information that are important for setting up the new project, indicated by the numbered circles in the image above.
   # You need to tell !SeqTrace where your sequencing trace files are located.  You can either type in a directory name or click "Choose..." to select one.  The "use relative folder path" checkbox tells !SeqTrace how to remember the trace file location.  If this box is checked, then !SeqTrace will save the location of the trace file folder relative to the location of the project file.  This is useful if you later move the project file and trace files to a different location on your system or a different computer.  If you use this option, you might want to save your project first, then specify the location of the trace files.  If this box is not checked, !SeqTrace will use the absolute path to the trace file location.
   # If your project has both forward and reverse sequencing reads of the same PCR products, then you will want to tell !SeqTrace how to identify which trace files are forward reads and which are reverse reads.  Usually, the sequencing trace filenames indicate whether the file is a forward or reverse read, and you can specify the portion of the filename that identifies the direction of the read.  !SeqTrace will then automatically identify trace files as forward or reverse sequences.
@@ -72,3 +63,12 @@ Sequence traces that are identified as reverse reads will automatically be rever
 After inspecting several of the files in your project, you might want to adjust the settings that !SeqTrace uses to generate finished sequences from the trace files.  Select "Project settings..." from the "File" menu or click the settings toolbar button to open the project settings window.
 
 http://seqtrace.googlecode.com/svn/wiki/images/project_settings-2.png
+
+There are four settings that control how !SeqTrace generates finished sequences from the "raw" base call reads in a trace file.
+
+  # The minimum confidence score indicates the threshold for what !SeqTrace considers to be a "good" base call.  Base calls with confidence scores below this threshold will either be removed from the finished sequence (if they are at one of the ends) or replaced with an "N".
+  # This checkbox controls whether or not !SeqTrace will trim the ends of the finished sequence to eliminate regions with a high percentage of low-quality base calls.
+  # If automatic end trimming is enabled (2, above), these two settings specify the number of low-quality base calls !SeqTrace will allow at the ends of the finished sequence.
+  # This setting only applies to consensus sequences generated from aligned forward and reverse sequencing reads.  If enabled, this setting will cause !SeqTrace to eliminate the ends of the finished sequence that are not supported by both reads.  In other words, the end gap regions of the alignment, where the two sequences do not overlap, will be removed.  This ensures the highest quality consensus sequence and should also guarantee that no primer sequence will be present in the finished sequence.
+
+After adjusting the !SeqTrace's sequence settings, you can tell !SeqTrace to re-calculate the working sequence to see how the new settings change the finished sequence (in the trace view window, choose Edit -> Recalculate working seq.).
