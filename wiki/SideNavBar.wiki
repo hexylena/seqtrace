@@ -5,4 +5,5 @@
     * [Installation Basic installation instructions]
     * [AdvancedInstallationTopics Advanced installation topics]
   * Using !SeqTrace
+    * [WorkingWithProjects Working with !SeqTrace projects]
   * [ScreenShots Screenshots]
