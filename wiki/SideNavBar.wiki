@@ -1,5 +1,6 @@
 #summary Side wiki navigation bar.
 
+  * [QuickStartGuide Quick start guide]
   * Installing !SeqTrace
     * [Installation Basic installation instructions]
     * [AdvancedInstallationTopics Advanced installation topics]
