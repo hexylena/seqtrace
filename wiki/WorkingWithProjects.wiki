@@ -81,4 +81,4 @@ After generating finished sequences, it's a good idea to inspect them in the tra
 
 == Exporting the finished sequences ==
 
-If you are satisfied with your finished sequences, then the final step is to export the sequences to a format you can use with other software for further analyses.  Choose one of the "Export sequences" options from the "Sequences" menu, or click the export toolbar button.  Then specify a file name and a file format (FASTA, etc.) and click "Save".  Note also that there is a checkbox in the save dialog that lets you specify whether or not you want the sequence trace file names included in the exported sequence file.
+If you are satisfied with your finished sequences, then the final step is to export the sequences to a format you can use with other software for further analyses.  Choose one of the "Export sequences" options from the "Sequences" menu, or click the export toolbar button.  Then, provide a file name, choose a file format (FASTA, etc.), and click "Save".  Note also that there is a checkbox in the save dialog that lets you specify whether or not you want the sequence trace file names included in the exported sequence file.
