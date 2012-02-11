@@ -21,4 +21,6 @@ From the trace view window, you can:
   * edit the called DNA bases
   * export the DNA sequence to other file formats, such as FASTA
 
+http://seqtrace.googlecode.com/svn/wiki/images/traceview_window-simple.png
+
 For more information about the trace view window, see the [TraceViewWindow detailed explanation] of its features and controls.
