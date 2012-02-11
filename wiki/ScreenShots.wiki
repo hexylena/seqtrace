@@ -11,3 +11,7 @@ XUbuntu 11.10
 <a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-winXP.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-winXP.png" width="440" /></a>
 
 Windows XP
+
+<a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-win7.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-win7.png" width="440" /></a>
+
+Windows 7
