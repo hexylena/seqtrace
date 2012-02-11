@@ -2,13 +2,13 @@
 
 = Working with !SeqTrace projects =
 
-!SeqTrace projects provide a convenient way to organize your work and process large numbers of trace files.  Furthermore, setting up a project is required in order to take advantage of !SeqTrace's more advanced features, such as automatic end quality trimming and forward/reverse trace matching.  Projects also allow you to save your work to an external !SeqTrace project file.
+!SeqTrace projects provide a convenient way to organize your work and allow you to quickly process large numbers of trace files.  Furthermore, setting up a project is required in order to take advantage of !SeqTrace's more advanced features, such as automatic end quality trimming and forward/reverse trace matching.  Projects also allow you to save your work to an external !SeqTrace project file.
 
 From start to finish, using a !SeqTrace project will usually proceed with the following work flow.
   # Create a new project.
   # Add your trace files to the project.
   # Identify and group matching forward and reverse trace files.
-  # Adjust parameters for generating finished sequences.
+  # Adjust settings for generating finished sequences.
   # Process all trace files in the project.
   # Export the resulting finished sequences.
 
@@ -19,6 +19,15 @@ This document discusses each of these steps in detail.
 From the main !SeqTrace window, select "New project.." from the "File" menu, or click the corresponding toolbar button.  !SeqTrace will then display the project settings window for the new project.
 
 http://seqtrace.googlecode.com/svn/wiki/images/project_settings-1.png
+
+There are four settings that control how !SeqTrace generates finished sequences from the "raw" base call reads in a trace file.
+
+  # The minimum confidence score indicates the threshold for what !SeqTrace considers to be a "good" base call.  Base calls with confidence scores below this threshold will either be removed from the finished sequence (if they are at one of the ends) or replaced with an "N".
+  # This checkbox controls whether or not !SeqTrace will trim the ends of the finished sequence to eliminate regions with a high percentage of low-quality base calls.
+  # If automatic end trimming is enabled (2, above), these two settings specify the number of low-quality base calls !SeqTrace will allow at the ends of the finished sequence.
+  # This setting only applies to consensus sequences generated from aligned forward and reverse sequencing reads.  If enabled, this setting will cause !SeqTrace to eliminate the ends of the finished sequence that are not supported by both reads.  In other words, the end gap regions of the alignment, where the two sequences do not overlap, will be removed.  This ensures the highest quality consensus sequence and should also guarantee that no primer sequence will be present in the finished sequence.
+
+After adjusting the !SeqTrace's sequence settings, you can tell !SeqTrace to re-calculate the working sequence to see how the new settings change the finished sequence (in the trace view window, choose Edit -> Recalculate working seq.).
 
 There are two pieces of information that are important for setting up the new project, indicated by the numbered circles in the image above.
   # You need to tell !SeqTrace where your sequencing trace files are located.  You can either type in a directory name or click "Choose..." to select one.  The "use relative folder path" checkbox tells !SeqTrace how to remember the trace file location.  If this box is checked, then !SeqTrace will save the location of the trace file folder relative to the location of the project file.  This is useful if you later move the project file and trace files to a different location on your system or a different computer.  If you use this option, you might want to save your project first, then specify the location of the trace files.  If this box is not checked, !SeqTrace will use the absolute path to the trace file location.
@@ -36,7 +45,7 @@ The image above shows the main !SeqTrace window after adding several trace files
   # This column contains the file name or group name (explained in the next section).  Note that you can click on the column heading of this or any other column to sort the file list by that column.
   # Here, you can type any notes about the trace file, such as a specimen number, primer information, etc.  Notes are saved along with the rest of the project.
   # This column indicates whether a finished sequence has been saved for the trace file.  "Finished sequence" means a DNA sequence after removing low-quality base calls, end trimming, etc.
-  # This column contains a checkbox that indicates if you want to use the finished sequence when you export the finished DNA sequences to a project file.  For example, if you determine that a particular PCR product did not sequence properly, you will want to leave this unchecked.
+  # This column contains a checkbox that indicates if you want to use the finished sequence when you export the DNA sequences to an external file.  For example, if you determine that a particular PCR product did not sequence properly, you will want to leave this unchecked.
 
 == Identifying and grouping matching forward and reverse trace files ==
 
@@ -50,4 +59,16 @@ Next, you can group together matching forward and reverse trace files (that is, 
 
 To manually group matching forward and reverse files together, first select the two files you want to group.  You can do this by holding down the CTRL key while clicking on the file names.  Then, choose "Group selected forward/reverse files" from the "Traces" menu.  You will then be prompted to provide a name for the new group.
 
-== Adjusting parameters for generating finished sequences ==
+http://seqtrace.googlecode.com/svn/wiki/images/project_window-2.png
+
+The image above shows the same project illustrated previously after grouping together matching forward and reverse trace files.  The bottom two groups are expanded to show their file names.
+
+== Adjusting settings for generating finished sequences ==
+
+You can view any file or forward/reverse group in your project by selecting it in the project window, then choosing "View selected trace file(s)..." from the "Traces" menu or clicking on the corresponding toolbar button.  This will open the trace file or group in the trace view window.  For more information about using the trace view window, read the [QuickStartGuide quick start guide] or the full trace window documentation.
+
+Sequence traces that are identified as reverse reads will automatically be reverse complemented before being displayed in the trace view window.  If you select a forward/reverse group to display, the forward and reverse reads will display together in the trace view window, along with an alignment of the two sequences and a single consensus sequence.
+
+After inspecting several of the files in your project, you might want to adjust the settings that !SeqTrace uses to generate finished sequences from the trace files.  Select "Project settings..." from the "File" menu or click the settings toolbar button to open the project settings window.
+
+http://seqtrace.googlecode.com/svn/wiki/images/project_settings-2.png
