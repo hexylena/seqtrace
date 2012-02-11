@@ -14,13 +14,16 @@ Some users will be interested in improving !SeqTrace's performance or running !S
 
 If you only have a small number of trace files to process or you simply want to view a sequencing chromatogram, you can open trace files directly in !SeqTrace without first creating a !SeqTrace project.  From the "File" menu, select "Open trace file...", then choose a trace file to open.  This will open the sequencing file and display it in the trace view window.
 
-The key components of the trace view window are identified in Figure 1.
-
 From the trace view window, you can:
   * zoom and scroll the sequencing chromatogram
   * edit the called DNA bases
-  * export the DNA sequence to other file formats, such as FASTA
+  * export the DNA sequence to other file formats, such as FASTA.
 
 http://seqtrace.googlecode.com/svn/wiki/images/traceview_window-simple.png
+
+The key components of the trace view window are numbered in the image above.
+  # chromatogram: This is the sequencing chromatogram, with the quality scores depicted above the peaks.  You can use the toolbar to zoom the view in and out and adjust the y-axis scale.
+  # "raw" sequence:  The unmodified DNA sequence as identified by the base caller and stored in the trace file.  You can click on any base to make the chromatogram view jump to the corresponding peak.
+  # working sequence:  This is the sequence resulting from the removal of low-quality base calls, end trimming, and any other user edits.  You can select one or more bases on the working sequence and edit them directly.
 
 For more information about the trace view window, see the [TraceViewWindow detailed explanation] of its features and controls.
