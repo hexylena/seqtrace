@@ -7,7 +7,7 @@
 From start to finish, using a !SeqTrace project will usually proceed with the following work flow.
   # [WorkingWithProjects#Creating_a_new_project Create a new project.]
   # [WorkingWithProjects#Adding_trace_files_to_the_project Add your trace files to the project.]
-  # [WorkingWithProjects#Identifying_and_grouping_matching_forward_and_reverse_trace_files Identify and group matching forward and reverse trace files.]
+  # [WorkingWithProjects#Identifying_and_grouping_matching_forward_and_reverse_trace_file Identify and group matching forward and reverse trace files.]
   # [WorkingWithProjects#Adjusting_settings_for_generating_finished_sequences Adjust settings for generating finished sequences.]
   # [WorkingWithProjects#Processing_all_trace_files_in_the_project Process all trace files in the project.]
   # [WorkingWithProjects#Exporting_the_finished_sequences Export the resulting finished sequences.]
