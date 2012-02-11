@@ -7,7 +7,7 @@
 From start to finish, using a !SeqTrace project will usually proceed with the following work flow.
   # Create a new project.
   # Add your trace files to the project.
-  # Identify matching forward and reverse trace files.
+  # Identify and group matching forward and reverse trace files.
   # Adjust parameters for generating finished sequences.
   # Process all trace files in the project.
   # Export the resulting finished sequences.
@@ -26,6 +26,8 @@ There are two pieces of information that are important for setting up the new pr
 
 == Adding trace files to the project ==
 
-Adding files to the project is simple.  Select "Add trace file(s)..." from the "Traces" menu, or click the corresponding toolbar button, then select the sequencing trace files you want to add.
+Adding files to the project is simple.  Select "Add trace file(s)..." from the "Traces" menu, or click the corresponding toolbar button, then select the sequencing trace files you want to add.  You can also remove trace files from the project by selecting the file or files you want to remove in the project window, then choosing "Remove selected trace file(s)" from the "Traces" menu.
 
-If you correctly set the forward and reverse search strings in the project settings, !SeqTrace will automatically identify the direction of the sequencing reads.  If not, you can open the project settings (File -> Project settings...), set the correct search strings, then have !SeqTrace re-identify forward and reverse files (Traces -> Find and mark forward/reverse).
+== Identifying and grouping matching forward and reverse trace files ==
+
+If you correctly set the forward and reverse search strings in the project settings, !SeqTrace will automatically identify the direction of the sequencing reads when you add files to the project.  If not, you can open the project settings (File -> Project settings...), set the correct search strings, then have !SeqTrace re-identify forward and reverse files (Traces -> Find and mark forward/reverse).
