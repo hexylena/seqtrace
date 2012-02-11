@@ -1,0 +1,9 @@
+#summary Screen shots of SeqTrace running on various operating systems.
+
+= Screen shots of SeqTrace =
+
+Click on any image to see a full size version of the screen shot.
+
+<a href="http://seqtrace.googlecode.com/svn/wiki/images/xubuntu_scrnshot.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/xubuntu_scrnshot-small.png" /></a>
+
+XUbuntu 11.10
