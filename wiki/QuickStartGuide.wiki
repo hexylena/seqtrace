@@ -36,7 +36,7 @@ Using a !SeqTrace project typically involves the following steps.
   # Create a new project.
   # Add your trace files to the project.
   # Identify matching forward and reverse trace files.
-  # Adjust the parameters for generating finished sequences.
+  # Adjust parameters for generating finished sequences.
   # Process all trace files in the project.
   # Export the resulting finished sequences.
 
