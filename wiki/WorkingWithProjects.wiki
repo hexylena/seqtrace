@@ -24,6 +24,8 @@ There are two pieces of information that are important for setting up the new pr
   # You need to tell !SeqTrace where your sequencing trace files are located.  You can either type in a directory name or click "Choose..." to select one.  The "use relative folder path" checkbox tells !SeqTrace how to remember the trace file location.  If this box is checked, then !SeqTrace will save the location of the trace file folder relative to the location of the project file.  This is useful if you later move the project file and trace files to a different location on your system or a different computer.  If you use this option, you might want to save your project first, then specify the location of the trace files.  If this box is not checked, !SeqTrace will use the absolute path to the trace file location.
   # If your project has both forward and reverse sequencing reads of the same PCR products, then you will want to tell !SeqTrace how to identify which trace files are forward reads and which are reverse reads.  Usually, the sequencing trace filenames indicate whether the file is a forward or reverse read, and you can specify the portion of the filename that identifies the direction of the read.  !SeqTrace will then automatically identify trace files as forward or reverse sequences.
 
+For now, you can just accept the default values for the other project settings.
+
 == Adding trace files to the project ==
 
 Adding files to the project is simple.  Select "Add trace file(s)..." from the "Traces" menu, or click the corresponding toolbar button, then select the sequencing trace files you want to add.  You can also remove trace files from the project by selecting the file or files you want to remove in the project window, then choosing "Remove selected trace file(s)" from the "Traces" menu.
@@ -31,3 +33,13 @@ Adding files to the project is simple.  Select "Add trace file(s)..." from the "
 == Identifying and grouping matching forward and reverse trace files ==
 
 If you correctly set the forward and reverse search strings in the project settings, !SeqTrace will automatically identify the direction of the sequencing reads when you add files to the project.  If not, you can open the project settings (File -> Project settings...), set the correct search strings, then have !SeqTrace re-identify forward and reverse files (Traces -> Find and mark forward/reverse).
+
+An arrow next to the trace file's name indicates whether !SeqTrace thinks the file is a forward or reverse sequencing read.  A right-pointing blue arrow (http://seqtrace.googlecode.com/svn/wiki/images/forward_arrow.png) identifies a forward sequence; a left-pointing orange arrow (http://seqtrace.googlecode.com/svn/wiki/images/reverse_arrow.png) identifies a reverse sequence.
+
+You can also manually specify whether a trace file is a forward or reverse read.  Clicking on the indicator arrow next to the trace file name will toggle the arrow's direction and whether the sequence is treated as a forward or reverse sequencing read.
+
+Next, you can group together matching forward and reverse trace files (that is, forward and reverse reads of the same PCR product).  !SeqTrace can attempt to automatically identify and group matching forward and reverse reads by looking for trace files with matching file names (besides the part of the name that indicates forward or reverse).  To have !SeqTrace automatically group matching forward and reverse files, choose one of the "Auto-group trace files" options from the "Traces" menu.
+
+To manually group matching forward and reverse files together, first select the two files you want to group.  You can do this by holding down the CTRL key while clicking on the file names.  Then, choose "Group selected forward/reverse files" from the "Traces" menu.  You will then be prompted to provide a name for the new group.
+
+== Adjusting parameters for generating finished sequences ==
