@@ -1,9 +1,13 @@
 #summary Images of SeqTrace running on various operating systems.
 
-=Screenshots of SeqTrace running on various operating systems=
+=Screenshots of !SeqTrace running on various operating systems=
 
 Click on any image to see a full size version.
 
-<a href="http://seqtrace.googlecode.com/svn/wiki/images/xubuntu_scrnshot.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/xubuntu_scrnshot-small.png" /></a>
+<a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-xubuntu.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-xubuntu-small.png" /></a>
 
 XUbuntu 11.10
+
+<a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-winXP.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-winXP.png" width="440" /></a>
+
+Windows XP
