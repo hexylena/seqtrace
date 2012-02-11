@@ -72,3 +72,13 @@ There are four settings that control how !SeqTrace generates finished sequences 
   # This setting only applies to consensus sequences generated from aligned forward and reverse sequencing reads.  If enabled, this setting will cause !SeqTrace to eliminate the ends of the finished sequence that are not supported by both reads.  In other words, the end gap regions of the alignment, where the two sequences do not overlap, will be removed.  This ensures the highest quality consensus sequence and should also guarantee that no primer sequence will be present in the finished sequence.
 
 After adjusting the !SeqTrace's sequence settings, you can tell !SeqTrace to re-calculate the working sequence to see how the new settings change the finished sequence (in the trace view window, choose Edit -> Recalculate working seq.).
+
+== Processing all trace files in the project ==
+
+Once you have the sequence settings correctly adjusted, you can tell !SeqTrace to generate finished sequences for all of the files or forward/reverse groups in your project.  Simply choose one of the "Generate finished sequences" options from the "Sequences" menu.  You can either select files in the project window (hold down the CTRL key to select multiple files or groups) or have !SeqTrace generate finished sequences for all files or groups in the project.
+
+After generating finished sequences, it's a good idea to inspect them in the trace view window to make sure that everything worked as expected.  If not, you can adjust the sequence settings and re-calculate the finished sequences, or edit the finished sequences by hand in the trace view window.
+
+== Exporting the finished sequences ==
+
+If you are satisfied with your finished sequences, then the final step is to export the sequences to a format you can use with other software for further analyses.  Choose one of the "Export sequences" options from the "Sequences" menu, or click the export toolbar button.  Then specify a file name and a file format (FASTA, etc.) and click "Save".  Note also that there is a checkbox in the save dialog that lets you specify whether or not you want the sequence trace file names included in the exported sequence file.
