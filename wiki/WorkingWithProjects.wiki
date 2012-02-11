@@ -30,6 +30,14 @@ For now, you can just accept the default values for the other project settings.
 
 Adding files to the project is simple.  Select "Add trace file(s)..." from the "Traces" menu, or click the corresponding toolbar button, then select the sequencing trace files you want to add.  You can also remove trace files from the project by selecting the file or files you want to remove in the project window, then choosing "Remove selected trace file(s)" from the "Traces" menu.
 
+http://seqtrace.googlecode.com/svn/wiki/images/project_window-1.png
+
+The image above shows the main !SeqTrace window after adding several trace files to a new project.  Each of the columns in the list of trace files, numbered in the image above, is explained below.
+  # This column contains the file name or group name (explained in the next section).  Note that you can click on the column heading of this or any other column to sort the file list by that column.
+  # Here, you can type any notes about the trace file, such as a specimen number, primer information, etc.  Notes are saved along with the rest of the project.
+  # This column indicates whether a finished sequence has been saved for the trace file.  "Finished sequence" means a DNA sequence after removing low-quality base calls, end trimming, etc.
+  # This column contains a checkbox that indicates if you want to use the finished sequence when you export the finished DNA sequences to a project file.  For example, if you determine that a particular PCR product did not sequence properly, you will want to leave this unchecked.
+
 == Identifying and grouping matching forward and reverse trace files ==
 
 If you correctly set the forward and reverse search strings in the project settings, !SeqTrace will automatically identify the direction of the sequencing reads when you add files to the project.  If not, you can open the project settings (File -> Project settings...), set the correct search strings, then have !SeqTrace re-identify forward and reverse files (Traces -> Find and mark forward/reverse).
