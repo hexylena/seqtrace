@@ -3,3 +3,5 @@
   * Installing !SeqTrace
     * [Installation Basic installation instructions]
     * [AdvancedInstallationTopics Advanced installation topics]
+  * Using !SeqTrace
+  * [ScreenShots Screenshots]
