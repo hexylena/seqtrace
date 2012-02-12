@@ -8,3 +8,16 @@
 !SeqTrace is entirely focused on processing sequencing files.  Thus, it does not do analyses such as multiple alignment or phylogenetic inference.  There is already plenty of good software for these tasks!
 
 !SeqTrace is best suited for sequencing projects that are primarily aimed at generating high quality sequences of one or more gene fragments (that is, single PCR products).  This sort of sequencing is common, for example, in phylogenetic studies or DNA barcoding efforts.  !SeqTrace does not currently do sequence assembly, so projects that require building contigs and assembling overlapping reads will probably want to use other software.
+
+== Similar software ==
+There are a variety of open source and commercial software packages that provide at least some of the functionality of !SeqTrace.  This list only includes software that is available for free on the Web and, as a minimum level of functionality, allows the user to view trace files and export the called bases.  Note that even though all of these programs are free of charge, the majority of them are proprietary and _not_ free and open source software (FOSS).  The open source packages are listed first.
+
+  * trev, part of the [http://staden.sourceforge.net/ Staden package] (FOSS, multi-platform)
+  * [http://ugene.unipro.ru/ Unipro UGENE] (FOSS, multi-platform)
+  * [http://mesquiteproject.org/packages/chromaseq/ Chromaseq] (FOSS, but requires additional proprietary software, multi-platform)
+  * [http://www.mekentosj.com/science/4peaks 4Peaks] (proprietary, OSX only)
+  * [http://www.technelysium.com.au/chromas_lite.html Chromas Lite] (proprietary, Windows only)
+  * [http://www.geospiza.com/Products/finchtv.shtml FinchTV] (proprietary, multi-platform)
+  * [http://www.ridom.de/traceedit/ Ridom TraceEdit] (proprietary, multiplatform)
+
+The first program on this list is trev, because it is the descendant of the first ever non-commercial sequencing trace viewer, ted, and part of one of the most important open source bioinformatics software packages, the [http://staden.sourceforge.net/ Staden package].
