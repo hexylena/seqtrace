@@ -6,4 +6,5 @@
     * [AdvancedInstallationTopics Advanced installation topics]
   * Using !SeqTrace
     * [WorkingWithProjects Working with SeqTrace projects]
+    * [TraceViewWindow Using the trace view window]
   * [ScreenShots Screenshots]
