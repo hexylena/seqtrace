@@ -1,4 +1,5 @@
 #summary How to get SeqTrace up and running.
+#labels Featured
 
 =Installation instructions=
 
