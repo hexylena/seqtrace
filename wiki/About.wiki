@@ -1,0 +1,10 @@
+#summary About SeqTrace
+
+= About !SeqTrace =
+
+== What !SeqTrace does (and what it does not do) ==
+!SeqTrace is designed to provide a user-friendly, graphical environment for efficiently processing Sanger DNA sequencing chromatogram files, or "trace files".  The first major data analysis step in many sequencing projects is deriving usable, "finished" sequences from the raw sequencing files.  It is this first step that !SeqTrace is intended for.  The finished sequences can then be used by other software for further downstream analyses.
+
+!SeqTrace is entirely focused on processing sequencing files.  Thus, it does not do analyses such as multiple alignment or phylogenetic inference.  There is already plenty of good software for these tasks!
+
+!SeqTrace is best suited for sequencing projects that are primarily aimed at generating high quality sequences of one or more gene fragments (that is, single PCR products).  This sort of sequencing is common, for example, in phylogenetic studies or DNA barcoding efforts.  !SeqTrace does not currently do sequence assembly, so projects that require building contigs and assembling overlapping reads will probably want to use other software.
