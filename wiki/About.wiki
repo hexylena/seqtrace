@@ -10,7 +10,9 @@
 !SeqTrace is best suited for sequencing projects that are primarily aimed at generating high quality sequences of one or more gene fragments (that is, single PCR products).  This sort of sequencing is common, for example, in phylogenetic studies or DNA barcoding efforts.  !SeqTrace does not currently do sequence assembly, so projects that require building contigs and assembling overlapping reads will probably want to use other software.
 
 == Similar software ==
-There are a variety of open source and commercial software packages that provide at least some of the functionality of !SeqTrace.  This list only includes software that is available for free on the Web and, as a minimum level of functionality, allows the user to view trace files and export the called bases.  I do not claim that this list is comprehensive.  Also, note that even though all of these programs are free of charge, the majority of them are proprietary and _not_ free and open source software (FOSS).  The open source options are listed first.
+There are a variety of open source and commercial software packages that provide at least some of the functionality of !SeqTrace.  This list only includes software that is available for free on the Web and, as a minimum level of functionality, allows the user to view trace files and export the called bases.  Although some of these programs have features not yet available in !SeqTrace, none of them exactly duplicate !SeqTrace's features and capabilities, as far as I know.
+
+I do not claim that this list is comprehensive.  Also, note that even though all of these programs are free of charge, the majority of them are proprietary and _not_ free and open source software (FOSS).  The open source options are listed first.
 
   * trev, part of the [http://staden.sourceforge.net/ Staden package] (FOSS, multi-platform)
   * [http://ugene.unipro.ru/ Unipro UGENE] (FOSS, multi-platform)
@@ -20,4 +22,4 @@ There are a variety of open source and commercial software packages that provide
   * [http://www.geospiza.com/Products/finchtv.shtml FinchTV] (proprietary, multi-platform)
   * [http://www.ridom.de/traceedit/ Ridom TraceEdit] (proprietary, multiplatform)
 
-The first program on this list is trev, because it is the descendant of the first-ever non-commercial sequencing trace viewer, ted, and part of an important open source bioinformatics software package, the [http://staden.sourceforge.net/ Staden package].  None of these programs exactly duplicate !SeqTrace's features and capabilities, as far as I know.  Some of them have features not yet available in !SeqTrace.
+It is worth noting that trev is the descendant of the first-ever non-commercial sequencing trace viewer, ted, developed as part of the [http://staden.sourceforge.net/ Staden package] and first announced in 1991.
