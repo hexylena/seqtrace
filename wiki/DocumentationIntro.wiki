@@ -2,7 +2,9 @@
 
 = !SeqTrace user documentation =
 
-To get started with !SeqTrace, you will probably want to first read through the [QuickStartGuide quick start guide], then browse the more in-depth documentation as needed.  If you plan to work on more than a few trace files or want to use SeqTrace's batch processing capabilities, then learning how to effectively [WoringWithProjects work with SeqTrace projects] will be extremely helpful.
+To get started with !SeqTrace, you will probably want to first read through the [QuickStartGuide quick start guide], then browse the more in-depth documentation as needed.  If you plan to work on more than a few trace files or want to use !SeqTrace's batch processing capabilities, then learning how to effectively [WorkingWithProjects work with SeqTrace projects] will be extremely helpful.
+
+== Table of contents ==
 
   * [QuickStartGuide Quick start guide]
   * [About About SeqTrace]
