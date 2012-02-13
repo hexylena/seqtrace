@@ -1,0 +1,15 @@
+#summary Top-level user documentation page
+
+= !SeqTrace user documentation =
+
+To get started with !SeqTrace, you will probably want to first read through the [QuickStartGuide quick start guide], then browse the more in-depth documentation as needed.  If you plan to work on more than a few trace files or want to use SeqTrace's batch processing capabilities, then learning how to effectively [WoringWithProjects work with SeqTrace projects] will be extremely helpful.
+
+  * [QuickStartGuide Quick start guide]
+  * [About About SeqTrace]
+  * Installing !SeqTrace
+    * [Installation Basic installation instructions]
+    * [AdvancedInstallationTopics Advanced installation topics]
+  * Using !SeqTrace
+    * [WorkingWithProjects Working with SeqTrace projects]
+    * [TraceViewWindow Using the trace view window]
+  * [ScreenShots Screenshots]
