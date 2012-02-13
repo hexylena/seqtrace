@@ -1,4 +1,5 @@
 #summary About SeqTrace
+#labels Featured
 
 = About !SeqTrace =
 
