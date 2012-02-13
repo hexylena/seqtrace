@@ -30,6 +30,6 @@ I do not claim that this list is comprehensive.  Also, note that even though all
   * [http://www.technelysium.com.au/chromas_lite.html Chromas Lite] (proprietary, Windows only)
   * [http://www.dnabaser.com/download/chromatogram-explorer/index.html Chromatogram Explorer Lite] (proprietary, Windows only)
   * [http://www.geospiza.com/Products/finchtv.shtml FinchTV] (proprietary, multi-platform)
-  * [http://www.ridom.de/traceedit/ Ridom TraceEdit] (proprietary, multiplatform)
+  * [http://www.ridom.de/traceedit/ Ridom TraceEdit] (proprietary, multi-platform)
 
 It is worth noting that trev is the descendant of the first-ever non-commercial sequencing trace viewer, ted, developed as part of the [http://staden.sourceforge.net/ Staden package] and first announced in 1991.
