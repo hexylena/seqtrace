@@ -10,19 +10,19 @@
 
 !SeqTrace includes a very fast pairwise alignment module written in C, but you must compile it for your hardware in order to use it.  If you would like to read more about this, check out the [AdvancedInstallationTopics advanced installation instructions].
 
-==General requirements==
+== General requirements ==
 
 !SeqTrace requires both [http://www.python.org/ Python] and [http://www.gtk.org/ GTK+] (and the Python package [http://www.pygtk.org/ PyGTK]), and will only run properly under the 2.7 series of Python, not 3.0.  There are significant differences between 2.7 and 3.0 in Python's handling of low-level file I/O, and these differences matter a great deal when reading binary sequence trace file formats.  !SeqTrace is currently written for the 2.x series of Python because it is widely installed and available just about everywhere.  In the future, though, I plan to port !SeqTrace to Python 3.0.
 
 
-==GNU/Linux==
+== GNU/Linux ==
 
 Installing !SeqTrace on most GNU/Linux distributions is very simple, because they generally already have all necessary software libraries installed.  Of course, !SeqTrace does require a windowing environment, so it will not work in command shell-only installations.
 
 On most GNU/Linux distributions (such as [http://www.ubuntu.com/ Ubuntu] or [http://xubuntu.org/ XUbuntu]), installing !SeqTrace requires nothing more than downloading and unzipping the !SeqTrace archive.  Run seqtrace.py to launch !SeqTrace.
 
 
-==Windows==
+== Windows ==
 
 !SeqTrace requires the Python runtime environment and the GTK+ library to run properly.  On Windows, you might need to install one or both of these before installing !SeqTrace.  Fortunately, both Python and GTK+ are both easy to install on Windows.  There are many other Windows programs that use Python or GTK+, so it is possible that your Windows environment already includes these packages.
 
@@ -33,3 +33,7 @@ Download the latest release of the [http://ftp.gnome.org/pub/GNOME/binaries/win3
 Download the !SeqTrace archive file (seqtrace.zip) and extract the contents wherever you would like to have !SeqTrace located on your system.
 
 That's it!  To run !SeqTrace, you can either double click seqtrace.py in Windows Explorer, or run seqtrace.py from a command prompt.
+
+== OSX ==
+
+OSX comes with Python pre-installed, but the included version is usually somewhat outdated.  If you are running a recent version of OSX, though, the Python that it came with will probably work just fine.  However, you can easily [http://www.python.org/download/releases/ download the latest OSX Python installer] and install it, which will ensure that you are running a recent release of Python.  Be sure to download the 2.7 series of Python, not the 3.x series.
