@@ -50,7 +50,7 @@ sudo port install py27-gtk
 sudo port select python python27
 }}}	
 
-The first command installs GTK+ and PyGTK along with any required dependencies, including the MacPorts version of Python 2.7.  The second command tells your computer to use the newly-installed version of Python.
+The first command installs GTK+ and PyGTK along with any required dependencies, including the !MacPorts version of Python 2.7.  The second command tells your computer to use the newly-installed version of Python.
 
 Download the !SeqTrace archive file (seqtrace.zip) and extract the contents wherever you would like to have !SeqTrace located on your system.
 
