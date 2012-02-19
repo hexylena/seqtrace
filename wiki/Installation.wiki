@@ -6,7 +6,7 @@
 !SeqTrace is easy to install on all popular operating systems.  The instructions differ somewhat for each OS, however, so be sure to follow the steps for your system.
   * [Installation#GNU/Linux GNU/Linux]
   * [Installation#Windows Windows]
-  * OSX
+  * [Installation#OSX OSX]
 
 !SeqTrace includes a very fast pairwise alignment module written in C, but you must compile it for your hardware in order to use it.  If you would like to read more about this, check out the [AdvancedInstallationTopics advanced installation instructions].
 
@@ -24,7 +24,7 @@ On most GNU/Linux distributions (such as [http://www.ubuntu.com/ Ubuntu] or [htt
 
 == Windows ==
 
-!SeqTrace requires the Python runtime environment and the GTK+ library to run properly.  On Windows, you might need to install one or both of these before installing !SeqTrace.  Fortunately, both Python and GTK+ are both easy to install on Windows.  There are many other Windows programs that use Python or GTK+, so it is possible that your Windows environment already includes these packages.
+!SeqTrace requires the Python runtime environment and the GTK+ library to run properly.  On Windows, you might need to install one or both of these before installing !SeqTrace.  Fortunately, both Python and GTK+ are easy to install on Windows.  There are many other Windows programs that use Python or GTK+, so it is possible that your Windows environment already includes these packages.
 
 If your system does not already have Python installed, you will need to download the latest [http://www.python.org/download/ Python 2.7.x installer] and install it.  Be sure to get the 32-bit version of Python, not the one with "X86-64" in its name.  The filename for the installer you want will be "python-2.7.x.msi" or something similar.
 
@@ -35,5 +35,40 @@ Download the !SeqTrace archive file (seqtrace.zip) and extract the contents wher
 That's it!  To run !SeqTrace, you can either double click seqtrace.py in Windows Explorer, or run seqtrace.py from a command prompt.
 
 == OSX ==
+
+!SeqTrace requires a Python interpreter and the GTK+ library in order to run.  OSX includes Python, but not GTK+, so at a minimum, you will need to install the GTK+ environment before you can use !SeqTrace.  There are two ways to get GTK+ running on OSX.  One option is to use the X11 windowing system, and the other is to use the native GTK+ for OSX.  Instructions for both approaches are provided here.
+
+Whether you use X11 or native GTK+, you will need to have Apple's Xcode software development kit installed.  For OSX 10.7 ("Lion") you can install it through the "App Store", for previous versions of OSX you can find it on the installation DVD or the [https://developer.apple.com/xcode/ Apple Developer website].
+
+=== running !SeqTrace with X11 ===
+
+First, you will need to make sure that you have the [http://www.x.org/wiki/ X11 windowing system] and [http://www.macports.org/ MacPorts] installed.  X11 provides a standard UNIX windowing environment for !SeqTrace, and !MacPorts provides an easy way to get the GTK+ libraries for X11 on your system.  On recent versions of OSX, X11 is installed by default, but not !MacPorts, so you will need to download and install the [http://www.macports.org/install.php MacPorts installer].
+
+Now, start a terminal window and run the following commands.
+{{{
+sudo port install py27-gtk
+sudo port select python python27
+}}}	
+
+The first command installs GTK+ and PyGTK along with any required dependencies, including the MacPorts version of Python 2.7.  The second command tells your computer to use the newly-installed version of Python.
+
+Download the !SeqTrace archive file (seqtrace.zip) and extract the contents wherever you would like to have !SeqTrace located on your system.
+
+To run !SeqTrace, first start X11 (located in the "Utilities" folder).  Then, from the X11 terminal window, run the following command, replacing "/path/to/seqtrace" with the location of !SeqTrace on your system.
+{{{
+python /path/to/seqtrace/seqtrace.py
+}}}
+
+That is all that is required to get !SeqTrace running.
+
+If you would like !SeqTrace to have a "prettier" look in X11, you can also use !MacPorts to install GTK2 engines and themes.  For example, one of the OSX [ScreenShots screenshots of SeqTrace] features the "Clearlooks" theme.  The following commands will let you choose a different theme for GTK+.
+{{{
+sudo port install gtk-theme-switch
+switch2
+}}}
+
+Note:  If you would like to run seqtrace.py directly (that is, without explicitly calling the Python interpreter), you can easily do so by editing the first line of seqtrace.py to reflect the location of the !MacPorts installation of Python.  In the terminal, run the command "which python", then copy the output and use it to replace everything after "#!" in the first line of seqtrace.py.
+
+=== running !SeqTrace with native GTK+ ===
 
 OSX comes with Python pre-installed, but the included version is usually somewhat outdated.  If you are running a recent version of OSX, though, the Python that it came with will probably work just fine.  However, you can easily [http://www.python.org/download/releases/ download the latest OSX Python installer] and install it, which will ensure that you are running a recent release of Python.  Be sure to download the 2.7 series of Python, not the 3.x series.
