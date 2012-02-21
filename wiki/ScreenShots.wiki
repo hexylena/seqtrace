@@ -4,14 +4,18 @@
 
 Click on any image to see a full size version.
 
-<a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-xubuntu.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-xubuntu-small.png" /></a>
-
 XUbuntu 11.10
 
-<a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-winXP.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-winXP.png" width="440" /></a>
+<a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-xubuntu.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-xubuntu-small.png" /></a>
 
 Windows XP
 
-<a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-win7.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-win7.png" width="440" /></a>
+<a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-winXP.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-winXP.png" width="440" /></a>
 
 Windows 7
+
+<a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-win7.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-win7.png" width="440" /></a>
+
+OSX, native GTK+
+
+<a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-OSX_native.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-OSX_native.png" width="440" /></a>
