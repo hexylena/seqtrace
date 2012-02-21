@@ -16,6 +16,6 @@ Windows 7
 
 <a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-win7.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-win7.png" width="440" /></a>
 
-OSX, native GTK+
+OSX (10.6, "Snow Leopard"), native GTK+
 
 <a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-OSX_native.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-OSX_native.png" width="440" /></a>
