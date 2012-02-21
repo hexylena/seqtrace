@@ -38,7 +38,7 @@ Installing !SeqTrace on most GNU/Linux distributions is very simple, because the
 
 == OSX ==
 
-!SeqTrace requires a Python interpreter and the GTK+ library in order to run.  OSX includes Python, but not GTK+, so at a minimum, you will need to install the GTK+ environment before you can use !SeqTrace.  There are two ways to get GTK+ running on OSX.  One option is to use the X11 windowing system, and the other is to use the native GTK+ for OSX.  Both options work well, but using native GTK+ is currently the quickest and easiest way to get !SeqTrace running.  However, instructions for both approaches are provided here.
+!SeqTrace requires a Python interpreter and the GTK+ library in order to run.  OSX includes Python, but not GTK+, so at a minimum, you will need to install the GTK+ environment before you can use !SeqTrace.  There are two ways to get GTK+ running on OSX.  One option is to use the X11 windowing system, and the other is to use the native GTK+ for OSX.  Both options work well, but in my (very) informal testing, the !SeqTrace interface seemed slightly more responsive running through X11.  Using native GTK+ is currently the quickest and easiest way to get !SeqTrace running, however.  Instructions for both approaches are provided here.
 
 *0. Download !SeqTrace:*  Either way, you should first download the !SeqTrace archive file (seqtrace.zip) and extract the contents wherever you would like to have !SeqTrace located on your system.
 
