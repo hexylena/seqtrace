@@ -4,9 +4,13 @@
 
 Click on any image to see a full size version.
 
+== GNU/Linux ==
+
 XUbuntu 11.10
 
 <a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-xubuntu.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-xubuntu-small.png" /></a>
+
+== Windows ==
 
 Windows XP
 
@@ -15,6 +19,8 @@ Windows XP
 Windows 7
 
 <a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-win7.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-win7.png" width="440" /></a>
+
+== OSX ==
 
 OSX (10.6 "Snow Leopard"), native GTK+
 
