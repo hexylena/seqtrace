@@ -62,17 +62,18 @@ sudo port install py27-gtk
 sudo port select python python27
 }}}	
 
-The first command installs GTK+ and PyGTK along with any required dependencies, including the !MacPorts version of Python 2.7.  The second command tells your computer to use the newly-installed version of Python.
+The first command installs GTK+ and PyGTK along with any required dependencies, including the !MacPorts version of Python 2.7.  This will take a few minutes to complete.  The second command tells your computer to use the newly-installed version of Python.
 
-*4. Run !SeqTrace:*  To run !SeqTrace, first start X11 (located in the "Utilities" folder).  Then, from the X11 terminal window, run the following command, replacing "/path/to/seqtrace" with the location of !SeqTrace on your system.
+*4. Run !SeqTrace:*  To run !SeqTrace, run the following command, replacing "/path/to/seqtrace" with the location of !SeqTrace on your system.
 {{{
 python /path/to/seqtrace/seqtrace.py
 }}}
 
-That is all that is required to get !SeqTrace running.
+That is all that is required to get !SeqTrace running.  OSX should automatically launch X11 when you start !SeqTrace.  If not, try exiting the terminal and opening a new terminal window, then run !SeqTrace.
 
 *5. Install GTK+ themes (optional):*  If you would like !SeqTrace to have a "prettier" look in X11, you can also use !MacPorts to install GTK2 engines and themes.  For example, one of the OSX [ScreenShots screenshots of SeqTrace] features the "Clearlooks" theme.  The following commands will let you choose a different theme for GTK+.
 {{{
+sudo port install gnome-themes
 sudo port install gtk-theme-switch
 switch2
 }}}
