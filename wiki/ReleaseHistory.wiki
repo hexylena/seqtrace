@@ -1,0 +1,8 @@
+#summary One-sentence summary of this page.
+
+= !SeqTrace release history =
+
+== !SeqTrace 0.8.0 ==
+*Feb. 22, 2012*
+
+*initial release*
