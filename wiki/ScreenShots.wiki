@@ -10,6 +10,10 @@ XUbuntu 11.10
 
 <a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-xubuntu.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-xubuntu-small.png" /></a>
 
+Ubuntu 11.04
+
+<a href="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-Ubuntu_11.04.png"><img src="http://seqtrace.googlecode.com/svn/wiki/images/screenshot-Ubuntu_11.04.png" width="440" /></a>
+
 == Windows ==
 
 Windows XP
