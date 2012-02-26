@@ -3,7 +3,7 @@
 
 =Installation instructions=
 
-!SeqTrace is easy to install on all popular operating systems.  The instructions differ somewhat for each OS, however, so be sure to follow the steps for your system.
+!SeqTrace is easy to install on all popular operating systems.  On Linux and Windows, installing !SeqTrace typically requires nothing more than downloading the appropriate package and unzipping the archive.  Installing !SeqTrace on OSX requires a bit more effort, but is still straightforward.  This document contains detailed installation instructions for all three operating systems.
   * [Installation#GNU/Linux GNU/Linux]
   * [Installation#Windows Windows]
   * [Installation#OSX OSX]
@@ -25,6 +25,16 @@ Installing !SeqTrace on most GNU/Linux distributions is very simple, because the
 
 
 == Windows ==
+
+I provide a binary executable version of !SeqTrace for Windows that does not require installing any additional software.
+
+*0. Download !SeqTrace:*  Download the [http://seqtrace.googlecode.com/files/seqtrace-win-0.8.0.zip SeqTrace package for Windows] and unzip the archive wherever you would like to have !SeqTrace located on your system.
+
+*1. Run !SeqTrace:*  Run seqtrace.exe to launch !SeqTrace.
+
+=== Running !SeqTrace from the source package on Windows ===
+
+If for some reason you would like to run !SeqTrace on Windows using the [http://seqtrace.googlecode.com/files/seqtrace-0.8.0.zip source package], it is not at all difficult.  You will simply need to install a few dependencies first.
 
 !SeqTrace requires the Python runtime environment and the GTK+ library to run properly.  On Windows, you might need to install one or both of these before installing !SeqTrace.  Fortunately, both Python and GTK+ are easy to install on Windows.  There are many other Windows programs that use Python or GTK+, so it is possible that your Windows environment already includes these packages.
 
