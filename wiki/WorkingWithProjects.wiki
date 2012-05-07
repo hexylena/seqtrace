@@ -12,7 +12,7 @@ From start to finish, using a !SeqTrace project will usually proceed with the fo
   # [WorkingWithProjects#Processing_all_trace_files_in_the_project Process all trace files in the project.]
   # [WorkingWithProjects#Exporting_the_finished_sequences Export the resulting finished sequences.]
 
-This document discusses each of these steps in detail.
+This document discusses each of these steps in detail.  Note that !SeqTrace can only have one project open at a time.  However, you can easily work on two or more projects simultaneously by simply launching another instance of !SeqTrace.
 
 == Creating a new project ==
 
