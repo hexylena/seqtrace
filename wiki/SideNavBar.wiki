@@ -9,3 +9,4 @@
     * [WorkingWithProjects Working with SeqTrace projects]
     * [TraceViewWindow Using the trace view window]
   * [ScreenShots Screenshots]
+  * [ReleaseHistory Release history]
