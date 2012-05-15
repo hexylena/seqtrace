@@ -2,6 +2,17 @@
 
 = !SeqTrace release history =
 
+== !SeqTrace 0.8.1 ==
+*May 14, 2012*
+
+This is primarily a bug fix release.  This release includes the following bug fixes or enhancements.
+
+  * The consensus and alignment modules can now handle "N"s in sequences.
+  * Windows: The project settings dialog deals gracefully with project files and trace files on separate drives when "use relative path" is checked.
+  * ABIF files (e.g., `*`.ab1) with "user-edited" sequence characters will now read properly.
+  * Trace files with "N"s in the base calls will now read properly.
+  * Building a consensus sequence no longer crashes if no quality scores exceed the minimum quality threshold.
+
 == !SeqTrace 0.8.0 ==
 *Feb. 22, 2012*
 
