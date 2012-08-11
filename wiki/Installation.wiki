@@ -19,7 +19,7 @@
 
 Installing !SeqTrace on most GNU/Linux distributions is very simple, because they generally already have all necessary software libraries installed.  Of course, !SeqTrace does require a windowing environment, so it will not work in command shell-only installations.
 
-*0. Download !SeqTrace:*  On most GNU/Linux distributions (such as [http://www.ubuntu.com/ Ubuntu] or [http://xubuntu.org/ XUbuntu]), installing !SeqTrace requires nothing more than downloading and unzipping the [http://seqtrace.googlecode.com/files/seqtrace-0.8.0.tar.gz SeqTrace archive].
+*0. Download !SeqTrace:*  On most GNU/Linux distributions (such as [http://www.ubuntu.com/ Ubuntu] or [http://xubuntu.org/ XUbuntu]), installing !SeqTrace requires nothing more than downloading and unzipping the [http://seqtrace.googlecode.com/files/seqtrace-0.8.1.tar.gz SeqTrace archive].
 
 *1. Run !SeqTrace:*  Run seqtrace.py to launch !SeqTrace.
 
@@ -28,13 +28,13 @@ Installing !SeqTrace on most GNU/Linux distributions is very simple, because the
 
 I provide a binary executable version of !SeqTrace for Windows that does not require installing any additional software.
 
-*0. Download !SeqTrace:*  Download the [http://seqtrace.googlecode.com/files/seqtrace-win-0.8.0.zip SeqTrace package for Windows] and unzip the archive wherever you would like to have !SeqTrace located on your system.
+*0. Download !SeqTrace:*  Download the [http://seqtrace.googlecode.com/files/seqtrace-win-0.8.1.zip SeqTrace package for Windows] and unzip the archive wherever you would like to have !SeqTrace located on your system.
 
 *1. Run !SeqTrace:*  Run seqtrace.exe to launch !SeqTrace.
 
 === Running !SeqTrace from the source package on Windows ===
 
-If for some reason you would like to run !SeqTrace on Windows using the [http://seqtrace.googlecode.com/files/seqtrace-0.8.0.zip source package], it is not at all difficult.  You will simply need to install a few dependencies first.
+If for some reason you would like to run !SeqTrace on Windows using the [http://seqtrace.googlecode.com/files/seqtrace-0.8.1.zip source package], it is not at all difficult.  You will simply need to install a few dependencies first.
 
 !SeqTrace requires the Python runtime environment and the GTK+ library to run properly.  On Windows, you might need to install one or both of these before installing !SeqTrace.  Fortunately, both Python and GTK+ are easy to install on Windows.  There are many other Windows programs that use Python or GTK+, so it is possible that your Windows environment already includes these packages.
 
@@ -50,7 +50,7 @@ If for some reason you would like to run !SeqTrace on Windows using the [http://
 
 !SeqTrace requires a Python interpreter and the GTK+ library in order to run.  OSX includes Python, but not GTK+, so at a minimum, you will need to install the GTK+ environment before you can use !SeqTrace.  There are two ways to get GTK+ running on OSX.  One option is to use the X11 windowing system, and the other is to use the native GTK+ for OSX.  Both options work well, but in my (very) informal testing, the !SeqTrace interface seemed slightly more responsive running through X11.  Using native GTK+ is currently the quickest and easiest way to get !SeqTrace running, however.  Instructions for both approaches are provided here.
 
-*0. Download !SeqTrace:*  Either way, you should first download the [http://seqtrace.googlecode.com/files/seqtrace-0.8.0.tar.gz SeqTrace archive file] and extract the contents wherever you would like to have !SeqTrace located on your system.
+*0. Download !SeqTrace:*  Either way, you should first download the [http://seqtrace.googlecode.com/files/seqtrace-0.8.1.tar.gz SeqTrace archive file] and extract the contents wherever you would like to have !SeqTrace located on your system.
 
 === running !SeqTrace with native GTK+ ===
 
