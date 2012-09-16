@@ -17,6 +17,13 @@
 
 If you have used !SeqTrace for your research, have suggestions for improvement, or think you have found a bug, I would be happy to hear from you.  You can reach me at stuckyb AT colorado DOT edu.  !SeqTrace is developed in my spare time, which is something I don't usually have much of, so I can't make any promises about when new versions of the software will be released, but I will try to fix any bugs as quickly as I can.
 
+== Citing !SeqTrace ==
+
+If you happen to use !SeqTrace for published research and would like to mention it in your methods, please use the following citation.
+
+Stucky, B.J. 2012. [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3413935/ SeqTrace: A Graphical Tool for Rapidly Processing DNA Sequencing Chromatograms]. _Journal of Biomolecular Techniques_ 23: 90-93.
+
+Thank you!
 
 == Similar software ==
 
