@@ -71,7 +71,7 @@ There are four settings that control how !SeqTrace generates finished sequences 
   # If automatic end trimming is enabled (2, above), these two settings specify the number of low-quality base calls !SeqTrace will allow at the ends of the finished sequence.
   # This setting only applies to consensus sequences generated from aligned forward and reverse sequencing reads.  If enabled, this setting will cause !SeqTrace to eliminate the ends of the finished sequence that are not supported by both reads.  In other words, the end gap regions of the alignment, where the two sequences do not overlap, will be removed.  This ensures the highest quality consensus sequence and should also guarantee that no primer sequence will be present in the finished sequence.
 
-After adjusting the !SeqTrace's sequence settings, you can tell !SeqTrace to re-calculate the working sequence to see how the new settings change the finished sequence (in the trace view window, choose Edit -> Recalculate working seq.).
+After adjusting !SeqTrace's sequence settings, you can tell !SeqTrace to re-calculate the working sequence to see how the new settings change the finished sequence (in the trace view window, choose Edit -> Recalculate working seq.).
 
 == Processing all trace files in the project ==
 
