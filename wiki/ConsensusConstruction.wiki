@@ -1,0 +1,15 @@
+#summary How !SeqTrace constructs consensus sequences
+
+=How !SeqTrace constructs consensus sequences=
+
+==Introduction==
+
+Sanger sequencing projects often produce both "forward" and "reverse" sequencing traces, representing the two complementary strands of the target DNA.  These traces provide two sources of information about the target DNA, and when considered together, they should provide a more accurate assessment of the true DNA sequence than either would individually.  Thus, an important feature of !SeqTrace is its ability to construct a single consensus sequence from matching forward and reverse sequencing traces.  This page describes how !SeqTrace builds these consensus sequences.
+
+In general, there are many approaches one could take to constructing a single consensus sequence from two or more aligned sequencing traces, but the most robust methods rely on numerical estimates of the accuracy of each base call on the trace data.  High-quality accuracy estimates first became available with the introduction of the software program Phred (Ewing and Green 1998), which uses characteristics of the sequencing trace to estimate the probability that each base is called correctly.  These probability estimates are log-scaled, resulting in a final quality score for each base call.  Experimental evidence has shown that Phred-type accuracy probabilities are highly reliable, and they have since become the standard for DNA sequencing.  Because these quality scores are essential to producing the most accurate consensus sequence possible, !SeqTrace requires that all trace data include base calls with Phred-type quality scores.  All modern Sanger sequencing platforms of which I am aware meet this requirement.
+
+Those who are interested in learning more about alternative approaches to constructing consensus sequences, as well as the historical development of this problem, should check out the papers by Churchill and Waterman (1992), Lawrence and Solovyev (1994), and Bonfield and Staden (1995).  The [http://staden.sourceforge.net/manual/gap4_unix_117.html#SEC199 documentation] of the sequence-assembly program Gap4, which is part of the open-source [http://staden.sourceforge.net/ Staden Package], also provides helpful background reading.
+
+==Consensus building with Bayes==
+
+The key idea that !SeqTrace uses to construct a consensus sequence using base call quality scores is as follows:  Because the quality score for a called base gives us the probability that the base was called correctly, if we have two calls for a single base from matching forward and reverse traces, we can use statistical methods to combine these probabilities in order to infer the most likely "true" base.  In this way, the information from both sequencing traces, along with the associated quality scores, allows the derivation of a final consensus sequence.
