@@ -38,9 +38,7 @@ Alignments of forward and reverse traces will almost always contain one or more 
 
 Considering the underlying "true" DNA, gaps can only represent one of two possibilities.  First, a gap can be caused by a nucleotide that actually _does_ exist in the true sequence but was not detected in one of the sequencing traces.  The second possibility is that one of the sequencing traces resulted in the base caller identifying a spurious nucleotide that does _not_ actually exist in the underlying DNA sequence.  In the first case, the gap is "real" because a base was missing in one of the traces; in the second case, the gap is merely an artifact caused by a non-existent base.
 
-To adjudicate between these two possibilities, !SeqTrace uses the quality score of the base call from the sequencing trace that created the gap in the alignment as well as the quality scores of the two bases that flank the gap in the other sequencing trace.  If the quality score of the gap-introducing base is less than the user-specified minimum quality threshold, *and* the mean quality score of the flanking bases in the other trace exceeds the minimum, then !SeqTrace considers the base call to represent a spurious nucleotide and deletes it from the finished consensus sequence.  Otherwise, the gap-introducing base is retained in the finished consensus sequence.
-
-This is an intentionally conservative algorithm that keeps all positions in the alignment unless there is strong evidence to delete a base position from one of the traces.
+Unfortunately, I do not know of any way to reliably adjudicate between those two possibilities in an automated fashion.  Consequently, !SeqTrace's consensus algorithm is intentionally conservative when dealing with internal gaps.  All alignment positions are kept in the final consensus sequence.  I strongly recommend that you visually inspect any internal gaps in forward/reverse trace alignments and decide whether to make any additional edits by hand.
 
 ==Consensus construction prior to !SeqTrace 0.9.0==
 
