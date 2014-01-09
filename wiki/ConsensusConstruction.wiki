@@ -32,13 +32,15 @@ Even if you do not fully understand the details of the methodology, you can easi
 
 An additional benefit of this approach is that each base of the consensus sequence has an associated probability.  These probabilities allow !SeqTrace to generate confidence scores for the entire consensus sequence.  !SeqTrace then uses a user-defined minimum quality score (30 by default) to decide which consensus base calls to accept for the finished sequence.
 
+As a final comment on !SeqTrace's consensus algorithm, I should mention that in the (very unlikely) case where two or more bases end up sharing the maximum probability, !SeqTrace will simply choose one as the consensus base.  Note, though, that this can only effect the consensus sequence if the minimum quality score cutoff is less than 4!  Consequently, it should be of no practical concern.
+
 ==What about alignment gaps?==
 
 Alignments of forward and reverse traces will almost always contain one or more gaps (in addition to the end gaps needed to achieve alignment).  These gaps pose a problem for the algorithm outlined in the previous section because they are a result of the alignment and do not have any associated quality score information.
 
 Considering the underlying "true" DNA, gaps can only represent one of two possibilities.  First, a gap can be caused by a nucleotide that actually _does_ exist in the true sequence but was not detected in one of the sequencing traces.  The second possibility is that one of the sequencing traces resulted in the base caller identifying a spurious nucleotide that does _not_ actually exist in the underlying DNA sequence.  In the first case, the gap is "real" because a base was missing in one of the traces; in the second case, the gap is merely an artifact caused by a non-existent base.
 
-Unfortunately, I do not know of any way to reliably adjudicate between those two possibilities in an automated fashion.  Consequently, !SeqTrace's consensus algorithm is intentionally conservative when dealing with internal gaps.  All alignment positions are kept in the final consensus sequence.  I strongly recommend that you visually inspect any internal gaps in forward/reverse trace alignments and decide whether to make any additional edits by hand.
+Unfortunately, I do not know of any way to reliably adjudicate between those two possibilities in an automated fashion, especially in regions where both sequences are of low quality.  Consequently, !SeqTrace's consensus algorithm is intentionally conservative when dealing with internal gaps, and all alignment positions are kept in the final consensus sequence.  It is always a good idea to visually inspect any internal gaps in forward/reverse trace alignments and decide whether to make any additional edits by hand.  However, with reasonably rigorous quality trimming of the sequence ends, there shouldn't be much to worry about.
 
 ==Consensus construction prior to !SeqTrace 0.9.0==
 
