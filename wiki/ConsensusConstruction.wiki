@@ -32,7 +32,7 @@ Even if you do not fully understand the details of the methodology, you can easi
 
 An additional benefit of this approach is that each base of the consensus sequence has an associated probability.  These probabilities allow !SeqTrace to generate confidence scores for the entire consensus sequence.  !SeqTrace then uses a user-defined minimum quality score (30 by default) to decide which consensus base calls to accept for the finished sequence.
 
-As a final comment on !SeqTrace's consensus algorithm, I should mention that in the (very unlikely) case where two or more bases end up sharing the maximum probability, !SeqTrace will simply choose one as the consensus base.  Note, though, that this can only effect the consensus sequence if the minimum quality score cutoff is less than 4!  Consequently, it should be of no practical concern.
+As a final comment on !SeqTrace's consensus algorithm, I should mention that in the (very unlikely) case where two or more bases end up sharing the maximum probability, !SeqTrace will simply choose one as the consensus base.  Note, though, that this can only affect the consensus sequence if the minimum quality score cutoff is less than 4!  Consequently, it should be of no practical concern.
 
 ==What about alignment gaps?==
 
