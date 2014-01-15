@@ -8,6 +8,6 @@
   * Using !SeqTrace
     * [WorkingWithProjects Working with SeqTrace projects]
     * [TraceViewWindow Using the trace view window]
-    * [ConsensusConstruction SeqTrace's consensus algorithms
+    * [ConsensusConstruction SeqTrace's consensus algorithms]
   * [ScreenShots Screenshots]
   * [ReleaseHistory Release history]
