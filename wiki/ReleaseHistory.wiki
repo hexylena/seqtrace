@@ -9,7 +9,7 @@
 
 Major new features in !SeqTrace 0.9.0 include the following.
 
-  * A new algorithm for computing consensus sequences that is based on Bayesian statistical methods.  This algorithm makes full use of the probability information contained in the base call quality scores to produce robust consensus sequences, and it often performs well even when the base call qualities are less than ideal.  To learn more, check out the [ConsensusConstruction new documentation].
+  * A new algorithm for computing consensus sequences that is based on Bayesian statistical methods.  This algorithm produces robust consensus sequences by making full use of the probability information contained in the base call quality scores.  It can perform well even when the base call qualities are less than ideal.  To learn more, check out the [ConsensusConstruction new documentation].
   * The new consensus algorithm also includes the ability to detect spurious gaps in the forward/reverse trace alignment and remove these positions from the final consensus sequence.  The details are covered in the [ConsensusConstruction documentation].
   * Full support for all [http://en.wikipedia.org/wiki/Nucleic_acid_notation IUPAC nucleotide codes] in trace files and in sequences.  This includes proper handling of ambiguous nucleotide codes by the alignment and consensus algorithms.
   * You can now specify the PCR primers that were used to amplify the sequenced DNA, and !SeqTrace will attempt to align the primers to the sequences and display them in the trace window.  This can be very helpful for making a quick visual assessment of your sequencing data.
@@ -28,7 +28,7 @@ Finally, there are also some bug fixes.
   * Entering invalid characters when editing a sequence in the trace view window no longer causes an error that leaves the viewer in an inconsistent state.
   * When reverse trace sequences are viewed in the trace view window, they are now displayed reverse complemented, as would be expected.
   * In the trace view window, the settings change notification in the status bar now always clears after a consensus sequence is recalculated.
-  * In the main window, if a forwar/reverse group and one or more of its child sequences are selected simultaneously, removing the forward/reverse group no longer causes a program crash.
+  * In the main window, if a forward/reverse group and one or more of its child sequences are selected simultaneously, removing the forward/reverse group no longer causes a program crash.
 
 == !SeqTrace 0.8.1 ==
 *May 14, 2012*
