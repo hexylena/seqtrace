@@ -4,11 +4,11 @@
 
 ==My sequencing trace files do not have base call quality scores.  Can I still use them in !SeqTrace?==
 
-Not completely (but you're not just out of luck, either -- see below).  You can probably view the traces, but you will not be able to get consensus sequences from them.  This is because all of !SeqTrace's consensus algorithms require quality information about the base calls.  In general, algorithms based on the quality scores are far superior to and much more robust than those that do not.
+Not completely (but you're not just out of luck, either -- see below).  You can probably view the traces, but you will not be able to get consensus sequences from them.  This is because all of !SeqTrace's consensus algorithms require quality information about the base calls.  In general, algorithms based on the quality scores are far superior to and much more robust than algorithms that do not use them.
 
 For just about all new sequencing data, this shouldn't be much of a problem.  Following the introduction of the software program [http://www.phrap.org/phredphrapconsed.html Phred] in 1992, quality scores for base calls have become absolutely ubiquitous.  All modern Sanger sequencing platforms of which I am aware produce trace files with base call quality scores.
 
-However, if you have old sequencing data without quality scores or you are still using older sequencing instruments with base calling software that does not calculate quality information, you do have a couple of options.  First, if all you want are the raw base calls (that is, the raw sequence) from the trace file, you should be able to export them from !SeqTrace.  Open the trace files(s) in the trace view window, then select "Export raw sequence(s)..." from the "File" menu.
+However, if you have old sequencing data without quality scores or you are still using older sequencing instruments with base calling software that does not calculate quality information, you do have a couple of options.  First, if all you want are the raw base calls (that is, the raw sequence) from the trace file, you should be able to export them directly from !SeqTrace.  Open the trace files(s) in the trace view window, then select "Export raw sequence(s)..." from the "File" menu.
 
 An even better option is to add quality scores to your trace data.  If you only have a few trace files, you might try the [http://www.nucleics.com/peaktrace-sequencing/ free online service] offered by [http://www.nucleics.com/ Nucleics].  You evidently upload your ABI trace files and then get back trace files with base calls and quality scores added.  I have not personally tried this and cannot vouch for how well it works, but they claim their software is accurate.
 
