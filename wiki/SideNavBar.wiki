@@ -10,4 +10,5 @@
     * [TraceViewWindow Using the trace view window]
     * [ConsensusConstruction SeqTrace's consensus algorithms]
   * [ScreenShots Screenshots]
+  * [FAQ]
   * [ReleaseHistory Release history]
