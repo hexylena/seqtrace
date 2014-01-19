@@ -3,6 +3,7 @@
 =Frequently asked questions=
 
   # [#My_sequencing_trace_files_do_not_have_base_call_quality_scores.__Can_I_still_use_them_in_SeqTrace? My sequencing trace files do not have base call quality scores.  Can I still use them in !SeqTrace?]
+  # [Why_can't_I_adjust_the_y-axis_scale_when_I'm_viewing_forward_and_reverse_traces_together? Why can't I adjust the y-axis scale when I'm viewing forward and reverse traces together?]
 
 ==My sequencing trace files do not have base call quality scores.  Can I still use them in !SeqTrace?==
 
