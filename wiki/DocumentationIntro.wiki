@@ -15,5 +15,6 @@ To get started with !SeqTrace, you will probably want to first read through the 
     * [WorkingWithProjects Working with SeqTrace projects]
     * [TraceViewWindow Using the trace view window]
     * [ConsensusConstruction How SeqTrace's consensus algorithms work]
+  * [FAQ]
   * [ScreenShots Screenshots]
   * [ReleaseHistory Release history]
