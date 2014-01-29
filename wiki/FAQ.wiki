@@ -15,7 +15,25 @@ However, if you have old sequencing data without quality scores or you are still
 
 A better option (and, if your trace files have no quality data at all, your only option) is to add quality scores to your trace data.  If you only have a few trace files, you might try the [http://www.nucleics.com/peaktrace-sequencing/ free online service] offered by [http://www.nucleics.com/ Nucleics].  You evidently upload your ABI trace files and then get back trace files with base calls and quality scores added.  I have not personally tried this and cannot vouch for how well it works, but they claim their software is accurate.
 
-You can also add quality scores quite easily with the program Phred.  Phred is a command-line program, and you will need to run it with the "-cv 3" option to tell it to generate its output as SCF version 3 trace files.  You should then be able to use these trace files with !SeqTrace.  Phred is available at no cost for academic users, but it is unfortunately not free and open source software (FOSS).  It also looks like actually [http://www.phrap.org/consed/consed.html#howToGet obtaining the software] is sort of a pain.  However, there simply are no FOSS options for base calling and generating quality scores (that I know of, anyway), so Phred is probably your best choice (unless you want to pay for ABI software!).
+A more general solution is to use base-calling software to add the quality information to the trace files yourself.  I recommend using [http://sourceforge.net/projects/tracetuner/ TraceTuner], which has been widely used with a proven track record of success.  This software was originally developed by a company called Paracel, which became part of Celera, and was released as an open source project in 2006.
+
+You can process ABI files directly with !TraceTuner, have it call the bases and calculate quality scores, and output the results as an SCF trace file.  When you run !TraceTuner, use the -cv3 option to have it output the results using version 3.0 of the SCF standard, which !SeqTrace requires.  Unfortunately, when I tried this, I still got SCF 2.0 output files.  If that happens, you can use the program convert_trace in the [http://staden.sourceforge.net/ Staden Package] to easily convert these files to a format that !SeqTrace can use.  I recommend the ZTR format because if its efficient compression and small file size.
+
+Here's an example of the simplest way to run !TraceTuner to get the job done.
+
+{{{
+ttuner -cv3 -c trace_file.ab1
+}}}
+
+That will generate an output file called "trace_file.scf".  If you need to convert the results to ZTR format, use this command.
+
+{{{
+convert_trace -out_format ZTR < trace_file.scf > trace_file.ztr
+}}}
+
+You should then be able to open the files and work with them in !SeqTrace as usual.
+
+If you don't want to use !TraceTuner, you can also try the program Phred.  Be sure to run Phred with the "-cv 3" option to tell it to generate its output as SCF version 3 trace files.  Phred is available at no cost for academic users, but it is unfortunately not free and open source software (FOSS).  It also looks like actually [http://www.phrap.org/consed/consed.html#howToGet obtaining the software] is sort of a pain.
 
 ==Why can't I adjust the y-axis scale when I'm viewing forward and reverse traces together?==
 You can, but you can only adjust the y-axis scale for one trace at a time.  In the trace view window toolbar, you will notice a drop-down list box (item number 3 in the [TraceViewWindow documentation for the trace view window]) with the options "Both:", "Forward:", and "Reverse:".  Make sure that either "Forward:" or "Reverse:" is selected, and you should then be able to adjust the y-axis scale for the selected trace.  This is also covered in the [TraceViewWindow documentation for the trace view window].
