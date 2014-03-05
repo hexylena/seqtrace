@@ -68,7 +68,7 @@ If for some reason you would like to run !SeqTrace on Windows using the [http://
 
 *3. Install GTK+ and PyGTK:*  Now, start a terminal window and run the following commands.
 {{{
-sudo port install py27-gtk
+sudo port install py27-pygtk
 sudo port select python python27
 }}}	
 
